@@ -95,6 +95,17 @@ Then open:
 
 The app automatically loads `data/products.catalog.json` and falls back to bundled data if loading fails.
 
+
+## Why merge conflicts happened
+
+You saw conflict markers because both branches edited the same regions of `README.md` in different ways:
+
+- One branch added PDP + ingestion pipeline sections.
+- Another branch kept the simpler local-run version.
+- Git could not automatically decide which version to keep for overlapping lines, so it inserted conflict markers (`<<<<<<<`, `=======`, `>>>>>>>`) for manual resolution.
+
+The resolved version in this repository keeps the combined content (core app usage **and** ingestion pipeline docs).
+
 ## Quick Validation
 
 ```bash
