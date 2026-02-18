@@ -1,0 +1,18 @@
+[
+  {
+    "source_product_id": "ewg-12345",
+    "name": "Sample Mineral Sunscreen SPF 50",
+    "brand": "Sample Brand",
+    "pdp_url": "https://www.ewg.org/skindeep/products/12345",
+    "category": "sunscreen",
+    "price": 21.99,
+    "size_ml": 50,
+    "actives": ["zinc oxide"],
+    "avoid_flags": ["fragrance"],
+    "irritancy": 1,
+    "pih_safe": true,
+    "evidence": {"photodamage": "strong", "melasma": "moderate"},
+    "citations": ["EWG listing"],
+    "trusted": true
+  }
+]

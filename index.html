@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkinWise – Intake & Evidence Weighting</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="layout">
+    <section class="card">
+      <h1>SkinWise Intake</h1>
+      <p class="sub">Collect client signals, tune evidence weights, and generate exactly 5 recommendations.</p>
+
+      <form id="intake-form">
+        <div class="grid two">
+          <label>Age
+            <input type="number" id="age" min="10" max="100" required />
+          </label>
+          <label>Sex
+            <select id="sex">
+              <option value="female">Female</option>
+              <option value="male">Male</option>
+              <option value="other">Other</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="grid two">
+          <label>Fitzpatrick Skin Type (I–VI)
+            <select id="fitzpatrick">
+              <option value="">Unknown</option>
+              <option value="I">I</option>
+              <option value="II">II</option>
+              <option value="III">III</option>
+              <option value="IV">IV</option>
+              <option value="V">V</option>
+              <option value="VI">VI</option>
+            </select>
+          </label>
+          <label>If unknown: burn/tan helper
+            <select id="fitz-helper">
+              <option value="">Select one</option>
+              <option value="always_burn_never_tan">Always burn, never tan</option>
+              <option value="burn_then_tan_light">Burn then tan lightly</option>
+              <option value="sometimes_burn_gradual_tan">Sometimes burn, gradual tan</option>
+              <option value="rarely_burn_tan_well">Rarely burn, tan well</option>
+              <option value="almost_never_burn_deep_tan">Almost never burn, deep tan</option>
+              <option value="never_burn_deeply_pigmented">Never burn, deeply pigmented</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="grid three">
+          <label>Skin Type
+            <select id="skin-type">
+              <option>dry</option>
+              <option>oily</option>
+              <option>combination</option>
+              <option>normal</option>
+              <option>sensitive</option>
+            </select>
+          </label>
+          <label>Acne Type
+            <select id="acne-type">
+              <option>comedonal</option>
+              <option>inflammatory</option>
+              <option>mixed</option>
+              <option>cystic</option>
+            </select>
+          </label>
+          <label>Locale / Nationality (availability only)
+            <input id="locale" placeholder="en-US, UK, India..." />
+          </label>
+        </div>
+
+        <fieldset>
+          <legend>Skin Diagnoses</legend>
+          <div class="chips" id="diagnoses"></div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Skin Problems (symptoms)</legend>
+          <div class="chips" id="problems"></div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Sensitivities / Avoid Toggles</legend>
+          <div class="chips" id="sensitivities"></div>
+        </fieldset>
+
+        <div class="grid three">
+          <label>Photodamage (0–4)<input type="range" min="0" max="4" value="1" id="photodamage" /><output id="photodamage-o">1</output></label>
+          <label>Melasma (0–4)<input type="range" min="0" max="4" value="0" id="melasma" /><output id="melasma-o">0</output></label>
+          <label>Rosacea (0–4)<input type="range" min="0" max="4" value="0" id="rosacea" /><output id="rosacea-o">0</output></label>
+          <label>Sun exposure (0–4)<input type="range" min="0" max="4" value="2" id="sun" /><output id="sun-o">2</output></label>
+          <label>Screen exposure (0–4)<input type="range" min="0" max="4" value="2" id="screen" /><output id="screen-o">2</output></label>
+          <label>Acne level (0–4)<input type="range" min="0" max="4" value="0" id="acne" /><output id="acne-o">0</output></label>
+          <label>Skin laxity (0–4)<input type="range" min="0" max="4" value="1" id="laxity" /><output id="laxity-o">1</output></label>
+          <label>Wrinkles (0–4)<input type="range" min="0" max="4" value="1" id="wrinkles" /><output id="wrinkles-o">1</output></label>
+        </div>
+
+        <label>Client-Identified Problem
+          <textarea id="client-problem" rows="2" placeholder="e.g., dark spots and texture"></textarea>
+        </label>
+
+        <div class="grid two">
+          <label>Budget max price ($)
+            <input type="number" min="0" id="budget-price" placeholder="Optional" />
+          </label>
+          <label>Budget max $/mL
+            <input type="number" step="0.01" min="0" id="budget-unit" placeholder="Optional" />
+          </label>
+        </div>
+
+        <button type="submit">Generate Recommendations</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Layer A Admin Weights (0-10)</h2>
+      <p class="sub">Weight multipliers are normalized with <code>weight / 10</code>.</p>
+      <div id="weights" class="weights-grid"></div>
+    </section>
+
+    <section class="card">
+      <h2>Top 5 Recommendations</h2>
+      <div id="results"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

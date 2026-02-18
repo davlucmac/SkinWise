@@ -1,0 +1,18 @@
+[
+  {
+    "source_product_id": "amzn-B000TEST",
+    "name": "2.5% Benzoyl Peroxide Wash",
+    "brand": "Demo Labs",
+    "pdp_url": "https://www.amazon.com/dp/B000TEST",
+    "category": "cleanser",
+    "price": 14.0,
+    "size_ml": 120,
+    "actives": ["benzoyl peroxide 2.5%"],
+    "avoid_flags": ["fragrance"],
+    "irritancy": 3,
+    "pih_safe": false,
+    "evidence": {"acne": "strong"},
+    "citations": ["Amazon PDP"],
+    "trusted": true
+  }
+]

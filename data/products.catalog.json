@@ -1,0 +1,307 @@
+[
+  {
+    "id": "2-5-benzoyl-peroxide-wash-amazon-amzn-b000test",
+    "name": "2.5% Benzoyl Peroxide Wash",
+    "brand": "Demo Labs",
+    "source": "amazon",
+    "sourceProductId": "amzn-B000TEST",
+    "pdpUrl": "https://www.amazon.com/dp/B000TEST",
+    "category": "cleanser",
+    "price": 14.0,
+    "sizeMl": 120.0,
+    "actives": [
+      "benzoyl peroxide 2.5%"
+    ],
+    "avoids": [
+      "fragrance"
+    ],
+    "irritancy": 3,
+    "pihSafe": false,
+    "evidence": {
+      "acne": "strong"
+    },
+    "citations": [
+      "Amazon PDP"
+    ]
+  },
+  {
+    "id": "sample-mineral-sunscreen-spf-50-ewg-ewg-12345",
+    "name": "Sample Mineral Sunscreen SPF 50",
+    "brand": "Sample Brand",
+    "source": "ewg",
+    "sourceProductId": "ewg-12345",
+    "pdpUrl": "https://www.ewg.org/skindeep/products/12345",
+    "category": "sunscreen",
+    "price": 21.99,
+    "sizeMl": 50.0,
+    "actives": [
+      "zinc oxide"
+    ],
+    "avoids": [
+      "fragrance"
+    ],
+    "irritancy": 1,
+    "pihSafe": true,
+    "evidence": {
+      "photodamage": "strong",
+      "melasma": "moderate"
+    },
+    "citations": [
+      "EWG listing"
+    ]
+  },
+  {
+    "id": "azelaic-10-serum",
+    "name": "Azelaic 10 Serum",
+    "brand": "SkinWise Labs",
+    "source": "internal",
+    "sourceProductId": "sw-002",
+    "pdpUrl": "https://example.com/products/azelaic-10-serum",
+    "category": "treatment",
+    "price": 18.0,
+    "sizeMl": 30.0,
+    "actives": [
+      "azelaic acid 10%",
+      "niacinamide"
+    ],
+    "avoids": [
+      "fragrance"
+    ],
+    "irritancy": 2,
+    "pihSafe": true,
+    "evidence": {
+      "acne": "moderate",
+      "rosacea": "moderate",
+      "melasma": "moderate"
+    },
+    "citations": [
+      "Cochrane acne review",
+      "Rosacea guideline"
+    ]
+  },
+  {
+    "id": "barrier-cream",
+    "name": "Barrier Cream",
+    "brand": "SkinWise Labs",
+    "source": "internal",
+    "sourceProductId": "sw-004",
+    "pdpUrl": "https://example.com/products/barrier-cream",
+    "category": "moisturizer",
+    "price": 22.0,
+    "sizeMl": 75.0,
+    "actives": [
+      "ceramides",
+      "cholesterol",
+      "glycerin"
+    ],
+    "avoids": [
+      "fragrance",
+      "essential oils",
+      "MI/MCI"
+    ],
+    "irritancy": 1,
+    "pihSafe": true,
+    "evidence": {
+      "eczema": "moderate",
+      "rosacea": "limited",
+      "skinType": "strong"
+    },
+    "citations": [
+      "Barrier repair literature"
+    ]
+  },
+  {
+    "id": "bha-2-gel",
+    "name": "BHA 2% Gel",
+    "brand": "SkinWise Labs",
+    "source": "internal",
+    "sourceProductId": "sw-005",
+    "pdpUrl": "https://example.com/products/bha-2-gel",
+    "category": "exfoliant",
+    "price": 20.0,
+    "sizeMl": 40.0,
+    "actives": [
+      "salicylic acid 2%"
+    ],
+    "avoids": [
+      "fragrance"
+    ],
+    "irritancy": 4,
+    "pihSafe": false,
+    "evidence": {
+      "acne": "strong",
+      "oiliness": "moderate"
+    },
+    "citations": [
+      "Acne topical keratolytic evidence"
+    ]
+  },
+  {
+    "id": "bpo-2-5-cleanser",
+    "name": "BPO 2.5% Cleanser",
+    "brand": "SkinWise Labs",
+    "source": "internal",
+    "sourceProductId": "sw-006",
+    "pdpUrl": "https://example.com/products/bpo-2-5-cleanser",
+    "category": "cleanser",
+    "price": 14.0,
+    "sizeMl": 120.0,
+    "actives": [
+      "benzoyl peroxide 2.5%"
+    ],
+    "avoids": [
+      "fragrance"
+    ],
+    "irritancy": 3,
+    "pihSafe": false,
+    "evidence": {
+      "acne": "strong"
+    },
+    "citations": [
+      "AAD acne treatment pathway"
+    ]
+  },
+  {
+    "id": "mineral-tint-spf-50",
+    "name": "Mineral Tint SPF 50",
+    "brand": "SkinWise Labs",
+    "source": "internal",
+    "sourceProductId": "sw-001",
+    "pdpUrl": "https://example.com/products/mineral-tint-spf-50",
+    "category": "sunscreen",
+    "price": 29.0,
+    "sizeMl": 50.0,
+    "actives": [
+      "zinc oxide",
+      "iron oxides"
+    ],
+    "avoids": [
+      "fragrance",
+      "essential oils"
+    ],
+    "irritancy": 1,
+    "pihSafe": true,
+    "evidence": {
+      "melasma": "strong",
+      "photodamage": "strong",
+      "rosacea": "moderate"
+    },
+    "citations": [
+      "AAD sunscreen guidance",
+      "Melasma visible-light studies"
+    ]
+  },
+  {
+    "id": "peptide-firming-lotion",
+    "name": "Peptide Firming Lotion",
+    "brand": "SkinWise Labs",
+    "source": "internal",
+    "sourceProductId": "sw-008",
+    "pdpUrl": "https://example.com/products/peptide-firming-lotion",
+    "category": "moisturizer",
+    "price": 30.0,
+    "sizeMl": 60.0,
+    "actives": [
+      "peptides",
+      "hyaluronic acid"
+    ],
+    "avoids": [
+      "fragrance"
+    ],
+    "irritancy": 1,
+    "pihSafe": true,
+    "evidence": {
+      "wrinkles": "limited",
+      "laxity": "limited"
+    },
+    "citations": [
+      "Peptide topical studies"
+    ]
+  },
+  {
+    "id": "pigment-control-serum",
+    "name": "Pigment Control Serum",
+    "brand": "SkinWise Labs",
+    "source": "internal",
+    "sourceProductId": "sw-007",
+    "pdpUrl": "https://example.com/products/pigment-control-serum",
+    "category": "treatment",
+    "price": 36.0,
+    "sizeMl": 30.0,
+    "actives": [
+      "tranexamic acid",
+      "niacinamide",
+      "licorice"
+    ],
+    "avoids": [
+      "fragrance",
+      "essential oils"
+    ],
+    "irritancy": 2,
+    "pihSafe": true,
+    "evidence": {
+      "melasma": "moderate",
+      "pih": "moderate"
+    },
+    "citations": [
+      "PIH treatment consensus"
+    ]
+  },
+  {
+    "id": "retinal-night-emulsion",
+    "name": "Retinal Night Emulsion",
+    "brand": "SkinWise Labs",
+    "source": "internal",
+    "sourceProductId": "sw-003",
+    "pdpUrl": "https://example.com/products/retinal-night-emulsion",
+    "category": "retinoid",
+    "price": 34.0,
+    "sizeMl": 30.0,
+    "actives": [
+      "retinaldehyde",
+      "ceramides"
+    ],
+    "avoids": [
+      "fragrance",
+      "essential oils"
+    ],
+    "irritancy": 3,
+    "pihSafe": true,
+    "evidence": {
+      "acne": "strong",
+      "wrinkles": "strong",
+      "photodamage": "moderate"
+    },
+    "citations": [
+      "AAD acne guideline",
+      "Photoaging retinoid meta-analysis"
+    ]
+  },
+  {
+    "id": "barrier-balm-yucca-yucca-9876",
+    "name": "Barrier Balm",
+    "brand": "Example Derma",
+    "source": "yucca",
+    "sourceProductId": "yucca-9876",
+    "pdpUrl": "https://www.inci-beauty.com/en/product/9876",
+    "category": "moisturizer",
+    "price": 18.5,
+    "sizeMl": 40.0,
+    "actives": [
+      "ceramides",
+      "glycerin"
+    ],
+    "avoids": [
+      "essential oils"
+    ],
+    "irritancy": 1,
+    "pihSafe": true,
+    "evidence": {
+      "skinType": "strong",
+      "eczema": "moderate"
+    },
+    "citations": [
+      "Yucca/INCI source page"
+    ]
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "source_product_id": "yucca-9876",
+    "name": "Barrier Balm",
+    "brand": "Example Derma",
+    "pdp_url": "https://www.inci-beauty.com/en/product/9876",
+    "category": "moisturizer",
+    "price": 18.5,
+    "size_ml": 40,
+    "actives": ["ceramides", "glycerin"],
+    "avoid_flags": ["essential oils"],
+    "irritancy": 1,
+    "pih_safe": true,
+    "evidence": {"skinType": "strong", "eczema": "moderate"},
+    "citations": ["Yucca/INCI source page"],
+    "trusted": true
+  }
+]
